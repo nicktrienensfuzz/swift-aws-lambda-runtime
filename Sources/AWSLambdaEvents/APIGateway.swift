@@ -49,9 +49,10 @@ public enum APIGateway {
             public let path: String
         }
 
-        public let resource: String
-        public let path: String
-        public let httpMethod: HTTPMethod
+        public let resource: String?
+        public let path: String?
+        public let httpMethod: HTTPMethod?
+        
 
         public let queryStringParameters: [String: String]?
         public let multiValueQueryStringParameters: [String: [String]]?
